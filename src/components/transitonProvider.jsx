@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 const TransitionProvider = ({ children }) => {
   const pathname = usePathname();
+  /* eslint-disable-next-line no-unused-vars */
   const [isFirstMount, setIsFirstMount] = useState(true);
   const prevPathnameRef = useRef(pathname);
 

@@ -84,13 +84,13 @@ const AboutPage = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                "I'm Karthikeya Madhavan, a full-stack developer specializing in
+                I am Karthikeya Madhavan, a full-stack developer specializing in
                 the MERN stack and Next.js. Passionate about building scalable and
                 efficient web applications, I have experience in React, Node.js,
                 Express, and MongoDB, along with server-side rendering and
                 performance optimization using Next.js. My projects range from
                 AI-powered applications to cloud storage platforms and real-time
-                chat integrations. I'm also exploring AI/ML, app development with
+                chat integrations. I am also exploring AI/ML, app development with
                 React Native, and UI/UX design using Figma. Constantly innovating
                 and learning, I strive to create impactful digital solutions.
               </motion.p>
@@ -100,7 +100,7 @@ const AboutPage = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                Let's build something amazing together!
+                Let us build something amazing together!
               </motion.span>
             </div>
             <div className="md:w-1/4 flex justify-center">

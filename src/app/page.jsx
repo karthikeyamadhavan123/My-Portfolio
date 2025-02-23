@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 
 const Homepage = () => {
+  /* eslint-disable-next-line no-unused-vars */
   const [hasMounted, setHasMounted] = useState(false);
 
 
