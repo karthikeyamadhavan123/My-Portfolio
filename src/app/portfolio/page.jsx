@@ -32,7 +32,7 @@ const projects = [
     description:
       "Wanderlust is a travel exploration platform that helps users discover destinations, plan trips, and share experiences. It provides personalized recommendations and insights to make travel planning seamless and enjoyable.",
     githubLink: "https://github.com/karthikeyamadhavan123/WanderLust",
-    vercelLink: "https://storycraft-frontend.onrender.com/",
+    vercelLink: "https://wander-lust-neon.vercel.app/",
     imgOrVideoId: "/wander.png",
   },
 ];
