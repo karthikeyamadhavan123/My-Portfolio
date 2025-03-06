@@ -10,6 +10,7 @@ const links = [
   { url: "/portfolio", title: "Portfolio" },
   { url: "/contact", title: "Contact" },
 ];
+
 const topVariants = {
   closed: {
     rotate: 0,
