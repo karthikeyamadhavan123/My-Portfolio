@@ -40,7 +40,7 @@ const projects = [
 const PortfolioPage = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
 
   return (
     <motion.div
@@ -55,23 +55,22 @@ const PortfolioPage = () => {
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
             {projects.map((project) => (
               <div
-                className={`h-full w-screen flex items-center justify-center bg-gradient-to-r ${project.color}`}
+                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${project.color}`}
                 key={project.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-white font-bold md:text-4xl lg:text-6xl xl:text-7xl">
+                <div className="flex flex-col gap-8 text-white p-8 bg-black bg-opacity-50 rounded-lg max-w-4xl mx-auto w-full h-full overflow-auto">
+                  <h1 className="text-white font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">
                     {project.name}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[250px] xl:w-[500px] xl:h-[400px]">
-                    <Image src={project.imgOrVideoId} alt="" fill />
+                  <div className="relative w-full h-56 md:h-64 lg:h-[300px] xl:h-[400px]">
+                    <Image src={project.imgOrVideoId} alt="" fill className="rounded-lg shadow-lg object-cover" />
                   </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-lg">
+                  <p className="w-full lg:text-lg text-white text-center">
                     {project.description}
                   </p>
-                  <div className="flex gap-4 justify-end mb-20">
+                  <div className="flex gap-4 justify-center">
                     <Link
                       href={project.vercelLink}
                       className="flex items-center justify-center w-32 md:w-40 lg:w-48 p-2 text-sm md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded hover:bg-gray-100 transition-colors"
