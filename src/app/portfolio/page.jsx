@@ -18,12 +18,12 @@ const projects = [
   {
     id: 2,
     color: "from-violet-300 to-purple-300",
-    name: "Story Craft",
+    name: "GymLink",
     description:
-      "Story Craft is a MERN-based creative writing assistant platform that helps writers draft, edit, and refine their stories with AI-powered suggestions and collaboration features.",
-    githubLink: "https://github.com/karthikeyamadhavan123/StoryCraft.git",
-    vercelLink: "https://storycraft-frontend.onrender.com/",
-    imgOrVideoId: "/storycraft.png",
+      "GymLink is a MERN-based fitness connectivity platform that helps users discover nearby gyms, book workout sessions, connect with certified trainers, and manage their fitness journey with ease. Designed for both users and gym owners, GymLink offers real-time availability, personalized recommendations, and seamless scheduling—all in one place.",
+    githubLink: "https://github.com/karthikeyamadhavan123/GymLink",
+    vercelLink: "https://gym-link.vercel.app/",
+    imgOrVideoId: "/gymlink.png",
   },
   {
     id: 3,
@@ -65,7 +65,12 @@ const PortfolioPage = () => {
                     {project.name}
                   </h1>
                   <div className="relative w-full h-56 md:h-64 lg:h-[300px] xl:h-[400px]">
-                    <Image src={project.imgOrVideoId} alt="" fill className="rounded-lg shadow-lg object-cover" />
+                    <Image
+                      src={project.imgOrVideoId}
+                      alt=""
+                      fill
+                      className="rounded-lg shadow-lg object-cover"
+                    />
                   </div>
                   <p className="w-full lg:text-lg text-white text-center">
                     {project.description}
