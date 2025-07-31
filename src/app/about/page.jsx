@@ -12,7 +12,14 @@ const AboutPage = () => {
       height={50}
       className={`transition-transform hover:scale-110 ${className}`}
     >
-      <circle cx="12" cy="12" r="10" stroke="#000000" strokeWidth={1} fill="none" />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="#000000"
+        strokeWidth={1}
+        fill="none"
+      />
       <path
         d="M12 6V16M12 16L8 12M12 16L16 12"
         stroke="#000000"
@@ -24,8 +31,21 @@ const AboutPage = () => {
   );
 
   const skills = [
-    "MongoDB", "Express Js", "React Js", "Node Js", "Next.js", "TypeScript",
-    "Figma", "AWS", "Java", "Python", "C", "Rust", "Haskell", "SQL", "Prisma"
+    "MongoDB",
+    "Express Js",
+    "React Js",
+    "Node Js",
+    "Next.js",
+    "TypeScript",
+    "Figma",
+    "AWS",
+    "Java",
+    "Python",
+    "C",
+    "Rust",
+    "Haskell",
+    "SQL",
+    "Prisma",
   ];
 
   const containerVariants = {
@@ -33,29 +53,29 @@ const AboutPage = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const skillVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
-      y: 20
+      y: 20,
     },
-    visible: { 
+    visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
+        duration: 0.5,
+      },
     },
     hover: {
       scale: 1.1,
       transition: {
-        duration: 0.2
-      }
-    }
+        duration: 0.2,
+      },
+    },
   };
 
   return (
@@ -70,7 +90,7 @@ const AboutPage = () => {
           {/* Biography Section - Left aligned */}
           <div className="flex flex-col gap-12 justify-center md:flex-row md:items-start">
             <div className="md:w-3/4 md:pr-8">
-              <motion.h1 
+              <motion.h1
                 className="font-bold text-2xl mb-8"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -78,23 +98,24 @@ const AboutPage = () => {
               >
                 BIOGRAPHY
               </motion.h1>
-              <motion.p 
+              <motion.p
                 className="text-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
                 I am Karthikeya Madhavan, a full-stack developer specializing in
-                the MERN stack and Next.js. Passionate about building scalable and
-                efficient web applications, I have experience in React, Node.js,
-                Express, and MongoDB, along with server-side rendering and
-                performance optimization using Next.js. My projects range from
-                AI-powered applications to cloud storage platforms and real-time
-                chat integrations. I am also exploring AI/ML, app development with
-                React Native, and UI/UX design using Figma. Constantly innovating
-                and learning, I strive to create impactful digital solutions.
+                the MERN stack and Next.js. Passionate about building scalable
+                and efficient web applications, I have experience in React,
+                Node.js, Express, and MongoDB, along with server-side rendering
+                and performance optimization using Next.js. My projects range
+                from AI-powered applications to cloud storage platforms and
+                real-time chat integrations. I am also exploring AI/ML, app
+                development with React Native, and UI/UX design using Figma.
+                Constantly innovating and learning, I strive to create impactful
+                digital solutions.
               </motion.p>
-              <motion.span 
+              <motion.span
                 className="italic block mt-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -104,8 +125,8 @@ const AboutPage = () => {
               </motion.span>
             </div>
             <div className="md:w-1/4 flex justify-center">
-              <a 
-                href="/resume.pdf" 
+              <a
+                href="/resume.pdf"
                 download="Karthikeya_Madhavan_Resume.pdf"
                 className="group relative cursor-pointer"
                 title="Download Resume"
@@ -121,7 +142,7 @@ const AboutPage = () => {
           {/* Skills Section - Right aligned */}
           <div className="flex flex-col gap-12 justify-center md:flex-row-reverse md:items-start">
             <div className="md:w-3/4 md:pl-8">
-              <motion.h1 
+              <motion.h1
                 className="font-bold text-2xl mb-8"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -129,7 +150,7 @@ const AboutPage = () => {
               >
                 SKILLS
               </motion.h1>
-              <motion.div 
+              <motion.div
                 className="flex gap-4 flex-wrap"
                 variants={containerVariants}
                 initial="hidden"
@@ -150,8 +171,8 @@ const AboutPage = () => {
               </motion.div>
             </div>
             <div className="md:w-1/4 flex justify-center">
-              <a 
-                href="/path-to-your-resume.pdf" 
+              <a
+                href="/Resume.pdf"
                 download="Karthikeya_Madhavan_Resume.pdf"
                 className="group relative cursor-pointer"
                 title="Download Resume"
@@ -167,7 +188,7 @@ const AboutPage = () => {
           {/* Experience Section - Left aligned */}
           <div className="flex flex-col gap-12 justify-center md:flex-row md:items-start pb-12">
             <div className="md:w-3/4 md:pr-8">
-              <motion.h1 
+              <motion.h1
                 className="font-bold text-2xl mb-8"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -175,7 +196,7 @@ const AboutPage = () => {
               >
                 EXPERIENCE
               </motion.h1>
-              <motion.div 
+              <motion.div
                 className="space-y-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -184,29 +205,56 @@ const AboutPage = () => {
               >
                 {[
                   {
+                    title: "Software Developer Intern",
+                    description:
+                      "Developed core features for 'BeeS Cloudilya - The ERP Sutra', an automation platform for college workflows. Enhanced LMS with video timestamp-saving, optimized database queries (35% faster response), and handled 10,000+ student records for admissions/attendance systems.",
+                    date: "May 2025 - July 2025",
+                    company: "BeeS Software Solutions Pvt. Ltd.",
+                    certificate: "/BEES.pdf", // Optional: Add link to certificate
+                  },
+                  {
                     title: "Full Stack Web Developer",
-                    description: "Interned at Unified Mentor as a full-stack developer, working with MERN stack and Next.js to develop scalable web applications and optimize performance.",
+                    description:
+                      "Interned at Unified Mentor as a full-stack developer, working with MERN stack and Next.js to develop scalable web applications and optimize performance.",
                     date: "Sep 2024 - Nov 2024",
-                    company: "Unified Mentor"
+                    company: "Unified Mentor",
                   },
                   {
                     title: "Techkriya Web Development Team",
-                    description: "We developed the Vulcanzy website using the MERN stack, implementing authentication, dynamic content management, responsive design, performance optimization, and scalability.",
+                    description:
+                      "We developed the Vulcanzy website using the MERN stack, implementing authentication, dynamic content management, responsive design, performance optimization, and scalability.",
                     date: "Oct 2024",
-                    company: "Techkriya 2024"
+                    company: "Techkriya 2024",
                   },
                   {
                     title: "Freelancer",
-                    description: "I am a freelance MERN stack developer, building scalable websites, APIs, AI integrations, real-time apps, and high-performance full-stack solutions.",
+                    description:
+                      "I am a freelance MERN stack developer, building scalable websites, APIs, AI integrations, real-time apps, and high-performance full-stack solutions.",
                     date: "Dec 2024 - Present",
-                    company: ""
-                  }
+                    company: "",
+                  },
                 ].map((exp, index) => (
                   <div key={index} className="border-l-2 border-black pl-4">
                     <div className="font-semibold text-lg">{exp.title}</div>
-                    <div className="text-gray-600 mt-2">{exp.description}</div>
+                    <div className="text-gray-600 mt-2">
+                      {exp.description}
+                      {exp.certificate && (
+                        <a
+                          href={exp.certificate}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="ml-2 text-blue-600 hover:underline text-sm"
+                        >
+                          View Certificate
+                        </a>
+                      )}
+                    </div>
                     <div className="text-sm text-gray-500 mt-2">{exp.date}</div>
-                    {exp.company && <div className="text-sm font-medium mt-1">{exp.company}</div>}
+                    {exp.company && (
+                      <div className="text-sm font-medium mt-1">
+                        {exp.company}
+                      </div>
+                    )}
                   </div>
                 ))}
               </motion.div>
